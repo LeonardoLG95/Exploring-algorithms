@@ -1,4 +1,4 @@
-import math
+from math import inf
 
 A = [9, 0, 59, 86, 69, 1, 4, 5, 97, 33, 36, 96, 84, 75, 42, 2, 3, 4, 5, 6, 7, 2, 4, 5, 7, 1, 2, 3, 6]
 print(f'Unordered list {A}, length {len(A)}')
@@ -24,8 +24,8 @@ def merge(A: list, p: int, q: int, r: int):
     for j in range(n2):
         R[j] = A[q + j]
 
-    L.append(math.inf)
-    R.append(math.inf)
+    L.append(inf)
+    R.append(inf)
 
     i = 0
     j = 0
